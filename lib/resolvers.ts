@@ -1,4 +1,4 @@
-import { Resolvers } from './resolvers-types'
+// import { Resolvers } from './resolvers-types'
 
 const userProfile = {
   id: String(1),
@@ -6,7 +6,7 @@ const userProfile = {
   status: 'cached',
 }
 
-const resolvers: Resolvers = {
+const resolvers = {
   Query: {
     viewer(_parent, _args, _context, _info) {
       return userProfile
